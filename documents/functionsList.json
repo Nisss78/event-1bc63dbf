@@ -1,0 +1,95 @@
+{
+  "key": "functionsList",
+  "value": [
+    {
+      "output": "作成されたイベントの情報",
+      "input": "イベント名 開催日時 場所 詳細情報",
+      "function_name": "イベント作成",
+      "description": "新しいイベントを作成し データベースに保存する",
+      "id": "FUN-001",
+      "category": "イベント管理",
+      "user": "管理者"
+    },
+    {
+      "output": "更新されたイベントの情報",
+      "input": "イベントID 更新情報（イベント名 開催日時 場所 詳細情報）",
+      "function_name": "イベント編集",
+      "description": "既存のイベント情報を編集し 更新する",
+      "id": "FUN-002",
+      "category": "イベント管理",
+      "user": "管理者"
+    },
+    {
+      "output": "削除結果",
+      "input": "イベントID",
+      "function_name": "イベント削除",
+      "description": "既存のイベントを削除する",
+      "id": "FUN-003",
+      "category": "イベント管理",
+      "user": "管理者"
+    },
+    {
+      "output": "イベント一覧（カレンダー形式）",
+      "input": "表示期間",
+      "function_name": "イベント一覧表示",
+      "description": "登録されているイベントの一覧をカレンダー形式で表示する",
+      "id": "FUN-004",
+      "category": "イベント表示",
+      "user": "全ユーザー"
+    },
+    {
+      "output": "イベント詳細情報",
+      "input": "イベントID",
+      "function_name": "イベント詳細表示",
+      "description": "選択したイベントの詳細情報を表示する",
+      "id": "FUN-005",
+      "category": "イベント表示",
+      "user": "全ユーザー"
+    },
+    {
+      "output": "参加登録結果",
+      "input": "ユーザーID イベントID",
+      "function_name": "イベント参加登録",
+      "description": "ユーザーがイベントへの参加を登録する",
+      "id": "FUN-006",
+      "category": "参加管理",
+      "user": "メンバー"
+    },
+    {
+      "output": "キャンセル結果",
+      "input": "ユーザーID イベントID",
+      "function_name": "イベント参加キャンセル",
+      "description": "ユーザーがイベントへの参加をキャンセルする",
+      "id": "FUN-007",
+      "category": "参加管理",
+      "user": "メンバー"
+    },
+    {
+      "output": "参加者リスト",
+      "input": "イベントID",
+      "function_name": "参加者リスト表示",
+      "description": "イベントの参加者リストをリアルタイムで表示する",
+      "id": "FUN-008",
+      "category": "参加管理",
+      "user": "全ユーザー"
+    },
+    {
+      "output": "参加者数 キャンセル数 未回答者数",
+      "input": "イベントID",
+      "function_name": "参加状況集計",
+      "description": "イベントごとの参加状況を集計し 表示する",
+      "id": "FUN-009",
+      "category": "参加管理",
+      "user": "管理者"
+    },
+    {
+      "output": "通知結果",
+      "input": "イベントID 通知内容",
+      "function_name": "イベント通知",
+      "description": "新規イベントの作成や変更をメンバーに通知する",
+      "id": "FUN-010",
+      "category": "通知",
+      "user": "システム"
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+{
+  "key": "asisOperationFlow",
+  "value": {
+    "mermaid": "graph TD\n    subgraph イベント主催者\n    A[イベント作成] --> B[イベント詳細入力]\n    B --> C[イベント公開]\n    C --> D[参加者リスト確認]\n    D --> E[イベント管理]\n    end\n\n    subgraph 参加者\n    F[イベント閲覧] --> G[参加登録]\n    G --> H[出欠更新]\n    end\n\n    subgraph システム\n    I[データベース更新] --> J[リアルタイム表示更新]\n    J --> K[通知送信]\n    end\n\n    C --> F\n    G --> I\n    H --> I\n    E --> I\n    J --> D"
+  }
+}

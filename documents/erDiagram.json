@@ -1,0 +1,6 @@
+{
+  "key": "erDiagram",
+  "value": {
+    "mermaid": "erDiagram\n    USERS ||--o{ EVENTS : 作成\n    USERS ||--o{ PARTICIPATIONS : 参加\n    EVENTS ||--o{ PARTICIPATIONS : 含む\n    USERS {\n        INT user_id PK\n        VARCHAR(255) name\n        VARCHAR(255) email\n        VARCHAR(255) password\n        TIMESTAMP created_at\n        TIMESTAMP updated_at\n    }\n    EVENTS {\n        INT event_id PK\n        INT creator_id FK\n        VARCHAR(255) title\n        TEXT description\n        DATETIME start_time\n        DATETIME end_time\n        VARCHAR(255) location\n        INT max_participants\n        TIMESTAMP created_at\n        TIMESTAMP updated_at\n    }\n    PARTICIPATIONS {\n        INT participation_id PK\n        INT user_id FK\n        INT event_id FK\n        ENUM status\n        TIMESTAMP created_at\n        TIMESTAMP updated_at\n    }"
+  }
+}

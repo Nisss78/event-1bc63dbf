@@ -1,0 +1,50 @@
+{
+  "key": "backendHandlesList",
+  "value": [
+    {
+      "fileName": "auth-login.ts",
+      "handleProcedure": "1. フロントエンドから受け取ったユーザー名とパスワードを検証する\n2. 認証が成功した場合 セッショントークンを生成する\n3. 生成したトークンをレスポンスとして返す",
+      "relatedScreen": "SRC-001",
+      "handleName": "ユーザー認証",
+      "description": "ユーザーのログイン情報を検証し セッショントークンを生成する",
+      "id": "BAC-001",
+      "category": "認証"
+    },
+    {
+      "fileName": "event-notification.ts",
+      "handleProcedure": "1. イベント情報とその変更内容を受け取る\n2. イベントに関連する参加者リストを取得する\n3. 各参加者に対してイベント通知メールを作成する\n4. メール送信サービスを使用して通知を送信する",
+      "relatedScreen": "SRC-002",
+      "handleName": "イベント通知送信",
+      "description": "イベントの詳細や変更をメールで参加者に通知する",
+      "id": "BAC-002",
+      "category": "通知"
+    },
+    {
+      "fileName": "event-statistics.ts",
+      "handleProcedure": "1. 指定されたイベントIDに基づいて参加者データを取得する\n2. 参加者数 キャンセル数 未回答数などを集計する\n3. 集計結果をJSON形式でレスポンスとして返す",
+      "relatedScreen": "SRC-003",
+      "handleName": "イベント参加統計",
+      "description": "イベントの参加状況を集計し 統計データを生成する",
+      "id": "BAC-003",
+      "category": "データ処理"
+    },
+    {
+      "fileName": "calendar-sync.ts",
+      "handleProcedure": "1. イベントデータを取得する\n2. 外部カレンダーサービスのAPIに接続する\n3. イベントデータを適切なフォーマットに変換する\n4. 外部カレンダーにイベントを追加または更新する\n5. 同期結果をレスポンスとして返す",
+      "relatedScreen": "SRC-004",
+      "handleName": "カレンダー同期",
+      "description": "イベント情報を外部カレンダーサービスと同期する",
+      "id": "BAC-004",
+      "category": "外部連携"
+    },
+    {
+      "fileName": "data-backup.ts",
+      "handleProcedure": "1. データベースの全テーブルデータを取得する\n2. データを圧縮し 暗号化する\n3. バックアップファイルを安全なストレージに保存する\n4. バックアップ完了通知を管理者に送信する",
+      "relatedScreen": "SRC-005",
+      "handleName": "データバックアップ",
+      "description": "定期的にシステムデータをバックアップする",
+      "id": "BAC-005",
+      "category": "セキュリティ"
+    }
+  ]
+}

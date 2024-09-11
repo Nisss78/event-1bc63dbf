@@ -1,0 +1,65 @@
+{
+  "key": "nonFunctionsList",
+  "value": [
+    {
+      "non_function_name": "レスポンス時間",
+      "description": "イベント一覧やイベント詳細ページの読み込み時間は3秒以内とする",
+      "id": "NON-001",
+      "category": "パフォーマンス"
+    },
+    {
+      "non_function_name": "認証",
+      "description": "ユーザーログインには二要素認証を実装し セキュリティを強化する",
+      "id": "NON-002",
+      "category": "セキュリティ"
+    },
+    {
+      "non_function_name": "システム稼働時間",
+      "description": "システムの稼働率は99.9%以上を維持する",
+      "id": "NON-003",
+      "category": "可用性"
+    },
+    {
+      "non_function_name": "同時接続ユーザー数",
+      "description": "1000人以上の同時接続ユーザーを処理できるようにする",
+      "id": "NON-004",
+      "category": "スケーラビリティ"
+    },
+    {
+      "non_function_name": "モバイル対応",
+      "description": "スマートフォンやタブレットからも快適に利用できるレスポンシブデザインを採用する",
+      "id": "NON-005",
+      "category": "ユーザビリティ"
+    },
+    {
+      "non_function_name": "バックアップ",
+      "description": "データベースの自動バックアップを1日1回実施し 7日分保持する",
+      "id": "NON-006",
+      "category": "データ管理"
+    },
+    {
+      "non_function_name": "個人情報保護",
+      "description": "個人情報保護法に準拠したデータ処理を行い ユーザーの同意を得た上で情報を収集・利用する",
+      "id": "NON-007",
+      "category": "コンプライアンス"
+    },
+    {
+      "non_function_name": "API対応",
+      "description": "外部システムと連携できるようRESTful APIを提供する",
+      "id": "NON-008",
+      "category": "拡張性"
+    },
+    {
+      "non_function_name": "ログ管理",
+      "description": "システムの動作ログを記録し エラーの追跡や性能分析に活用できるようにする",
+      "id": "NON-009",
+      "category": "保守性"
+    },
+    {
+      "non_function_name": "ヘルプ機能",
+      "description": "システム内にヘルプページを用意し ユーザーが自己解決できる環境を整える",
+      "id": "NON-010",
+      "category": "ユーザーサポート"
+    }
+  ]
+}

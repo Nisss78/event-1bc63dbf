@@ -1,0 +1,6 @@
+{
+  "key": "tobeOperationFlow",
+  "value": {
+    "mermaid": "graph TD\n    subgraph ユーザー\n    A[イベント情報入力] --> B[イベント作成]\n    C[イベント一覧閲覧] --> D[イベント詳細確認]\n    D --> E[参加/不参加登録]\n    F[参加者リスト確認]\n    end\n\n    subgraph システム\n    B --> G[データベースに保存]\n    G --> H[イベントカレンダー更新]\n    E --> I[参加状況更新]\n    I --> J[リアルタイム参加者数更新]\n    end\n\n    subgraph 管理者\n    K[イベント管理] --> L[参加者リスト管理]\n    L --> M[イベント調整/変更]\n    M --> N[参加者への通知]\n    end\n\n    B --> C\n    G --> C\n    I --> F\n    J --> F\n    I --> K"
+  }
+}

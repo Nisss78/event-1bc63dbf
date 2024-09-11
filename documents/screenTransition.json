@@ -1,0 +1,6 @@
+{
+  "key": "screenTransition",
+  "value": {
+    "mermaid": "graph LR\n    subgraph イベント管理システム\n    A[ログイン画面] --> B[ホーム画面]\n    B --> C[イベント作成画面]\n    B --> D[イベント一覧画面]\n    D --> E[イベント詳細画面]\n    E --> F[参加者リスト画面]\n    E --> G[出欠管理画面]\n    C --> D\n    G --> F\n    end\n    B --> H[カレンダー画面]\n    H --> E\n    E --> I[参加表明画面]\n    I --> E"
+  }
+}

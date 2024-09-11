@@ -1,0 +1,195 @@
+{
+  "key": "tableDefinition",
+  "value": [
+    {
+      "regulation": "PRIMARY KEY NOT NULL",
+      "defaultValue": "gen_random_uuid()",
+      "dataType": "uuid",
+      "column": "id",
+      "description": "イベントの一意識別子",
+      "id": "TAB-001",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "text",
+      "column": "name",
+      "description": "イベント名",
+      "id": "TAB-002",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "",
+      "defaultValue": "",
+      "dataType": "text",
+      "column": "description",
+      "description": "イベントの詳細説明",
+      "id": "TAB-003",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "timestamp with time zone",
+      "column": "start_datetime",
+      "description": "イベント開始日時",
+      "id": "TAB-004",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "timestamp with time zone",
+      "column": "end_datetime",
+      "description": "イベント終了日時",
+      "id": "TAB-005",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "",
+      "defaultValue": "",
+      "dataType": "text",
+      "column": "location",
+      "description": "イベント開催場所",
+      "id": "TAB-006",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "created_at",
+      "description": "イベント作成日時",
+      "id": "TAB-007",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "updated_at",
+      "description": "イベント更新日時",
+      "id": "TAB-008",
+      "foreignKey": "",
+      "table": "events"
+    },
+    {
+      "regulation": "PRIMARY KEY NOT NULL",
+      "defaultValue": "gen_random_uuid()",
+      "dataType": "uuid",
+      "column": "id",
+      "description": "参加者の一意識別子",
+      "id": "TAB-009",
+      "foreignKey": "",
+      "table": "participants"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "uuid",
+      "column": "event_id",
+      "description": "参加するイベントのID",
+      "id": "TAB-010",
+      "foreignKey": "events.id",
+      "table": "participants"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "uuid",
+      "column": "user_id",
+      "description": "参加するユーザーのID",
+      "id": "TAB-011",
+      "foreignKey": "users.id",
+      "table": "participants"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "'pending'",
+      "dataType": "text",
+      "column": "status",
+      "description": "参加ステータス（'pending' '参加予定' 'cancelled' '不参加'）",
+      "id": "TAB-012",
+      "foreignKey": "",
+      "table": "participants"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "created_at",
+      "description": "参加登録日時",
+      "id": "TAB-013",
+      "foreignKey": "",
+      "table": "participants"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "updated_at",
+      "description": "参加情報更新日時",
+      "id": "TAB-014",
+      "foreignKey": "",
+      "table": "participants"
+    },
+    {
+      "regulation": "PRIMARY KEY NOT NULL",
+      "defaultValue": "gen_random_uuid()",
+      "dataType": "uuid",
+      "column": "id",
+      "description": "ユーザーの一意識別子",
+      "id": "TAB-015",
+      "foreignKey": "",
+      "table": "users"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "",
+      "dataType": "text",
+      "column": "name",
+      "description": "ユーザー名",
+      "id": "TAB-016",
+      "foreignKey": "",
+      "table": "users"
+    },
+    {
+      "regulation": "UNIQUE NOT NULL",
+      "defaultValue": "",
+      "dataType": "text",
+      "column": "email",
+      "description": "ユーザーのメールアドレス",
+      "id": "TAB-017",
+      "foreignKey": "",
+      "table": "users"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "created_at",
+      "description": "ユーザー作成日時",
+      "id": "TAB-018",
+      "foreignKey": "",
+      "table": "users"
+    },
+    {
+      "regulation": "NOT NULL",
+      "defaultValue": "now()",
+      "dataType": "timestamp with time zone",
+      "column": "updated_at",
+      "description": "ユーザー情報更新日時",
+      "id": "TAB-019",
+      "foreignKey": "",
+      "table": "users"
+    }
+  ]
+}

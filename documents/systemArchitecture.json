@@ -1,0 +1,6 @@
+{
+  "key": "systemArchitecture",
+  "value": {
+    "mermaid": "graph TD\n    subgraph フロントエンド\n    A[イベント作成フォーム]\n    B[カレンダー表示]\n    C[イベント詳細表示]\n    D[参加表明インターフェース]\n    E[参加者リスト表示]\n    end\n\n    subgraph バックエンド\n    F[イベント管理API]\n    G[ユーザー認証]\n    H[通知サービス]\n    end\n\n    subgraph データベース\n    I[(イベントDB)]\n    J[(ユーザーDB)]\n    end\n\n    subgraph 外部サービス\n    K[メール送信サービス]\n    end\n\n    A --> F\n    B --> F\n    C --> F\n    D --> F\n    E --> F\n    F --> I\n    F --> J\n    G --> J\n    H --> K\n    F --> H"
+  }
+}

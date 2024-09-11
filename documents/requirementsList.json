@@ -1,0 +1,75 @@
+{
+  "key": "requirementsList",
+  "value": [
+    {
+      "requirement_name": "イベント作成",
+      "description": "主催者がイベントの詳細情報（名称 日時 場所 定員など）を入力し新しいイベントを作成できる",
+      "id": "REQ-001",
+      "category": "イベント管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "イベント編集",
+      "description": "主催者が作成済みのイベント情報を編集・更新できる",
+      "id": "REQ-002",
+      "category": "イベント管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "イベント中止",
+      "description": "主催者がイベントを中止し参加者に通知できる",
+      "id": "REQ-003",
+      "category": "イベント管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "イベント参加登録",
+      "description": "メンバーが開催予定のイベントに参加登録できる",
+      "id": "REQ-004",
+      "category": "参加管理",
+      "user": "メンバー"
+    },
+    {
+      "requirement_name": "参加キャンセル",
+      "description": "メンバーが参加登録したイベントをキャンセルできる",
+      "id": "REQ-005",
+      "category": "参加管理",
+      "user": "メンバー"
+    },
+    {
+      "requirement_name": "参加者リスト管理",
+      "description": "主催者がイベントごとの参加者リストを確認・管理できる",
+      "id": "REQ-006",
+      "category": "参加管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "イベント告知",
+      "description": "主催者が作成したイベントを全メンバーに通知できる",
+      "id": "REQ-007",
+      "category": "通知管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "リマインダー送信",
+      "description": "システムが参加予定のメンバーにイベント前日にリマインダーを自動送信する",
+      "id": "REQ-008",
+      "category": "通知管理",
+      "user": "システム"
+    },
+    {
+      "requirement_name": "参加状況レポート",
+      "description": "主催者がイベントごとの参加状況をレポートとして出力・確認できる",
+      "id": "REQ-009",
+      "category": "レポート管理",
+      "user": "主催者"
+    },
+    {
+      "requirement_name": "イベントカレンダー表示",
+      "description": "メンバーが月間カレンダーでイベントスケジュールを確認できる",
+      "id": "REQ-010",
+      "category": "カレンダー管理",
+      "user": "メンバー"
+    }
+  ]
+}
